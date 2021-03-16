@@ -1,0 +1,106 @@
+// TODO: create and import variables file
+$pink-primary: #d8a0a8;
+$pink-link: #cf5e6f;
+$white: #fff;
+$btn-light-color: #f8f9fa;
+$black: #222222;
+$his-text: #87a5ad;
+
+.btn {
+  font-weight: 400 !important;
+  color: $pink-primary;
+  padding: 0.8rem 2rem;
+  font-size: 16px;
+  text-transform: none;
+  transition: 0.15s all linear;
+
+  &:hover {
+    border-color: darken($white, 5%);
+    background-color: darken($white, 5%);
+    color: $pink-primary;
+  }
+}
+
+.btn.btn-primary {
+  &:hover {
+    border-color: lighten($pink-primary, 5%);
+    background-color: lighten($pink-primary, 5%);
+  }
+
+  &.mens-solid {
+    background-color: #87a5ad;
+    border-color: #87a5ad;
+    color: #fff;
+
+    &:hover {
+      background-color: lighten(#87a5ad, 5%);
+    }
+  }
+}
+
+
+.btn.btn-light {
+  &:hover {
+    border-color: darken($white, 5%);
+    background-color: darken($white, 5%);
+    color: $pink-primary;
+  }
+
+}
+
+.btn-outline-primary {
+  &:hover {
+    border-color: lighten($pink-primary, 10%);
+    color: lighten($pink-primary, 10%);
+  }
+}
+
+.btn.btn-outline-light {
+  color: $white;
+  border-width: 2px;
+
+  &:hover {
+    border-color: $white;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: $white;
+  }
+}
+
+.btn.btn-dark {
+  background-color: $black;
+  border-color: $black;
+  color: $white;
+}
+
+.btn.btn-outline-dark {
+  color: $black;
+
+  &:hover {
+    border-color: $black;
+    background-color: darken($white, 5%);
+    color: $black;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .btn {
+    font-size: 0.85rem;
+  }
+}
+
+.font-weight-light {
+  font-weight: 300;
+}
+
+.btn-mens {
+  &.btn-light {
+    color: $his-text;
+    &:hover {
+      color: darken($his-text, 10%);
+    }
+  }
+}
+
+.btn.border-width-2 {
+  border-width: 2px;
+}

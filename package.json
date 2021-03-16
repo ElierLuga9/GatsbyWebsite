@@ -1,0 +1,73 @@
+{
+  "name": "gatsby-starter-default",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "engines": {
+    "node": "12.x"
+  },
+  "dependencies": {
+    "@contentful/rich-text-react-renderer": "^13.4.0",
+    "babel-plugin-styled-components": "^1.10.7",
+    "bootstrap": "^4.4.1",
+    "gatsby": "^2.20.12",
+    "gatsby-background-image": "^1.1.1",
+    "gatsby-image": "^2.3.1",
+    "gatsby-plugin-canonical-urls": "^2.3.1",
+    "gatsby-plugin-google-tagmanager": "^2.3.5",
+    "gatsby-plugin-google-tagmanager-delayed": "^2.1.25",
+    "gatsby-plugin-google-tagmanager-timeout": "^2.2.5",
+    "gatsby-plugin-manifest": "^2.3.3",
+    "gatsby-plugin-netlify": "^2.3.4",
+    "gatsby-plugin-offline": "^3.1.2",
+    "gatsby-plugin-preconnect": "^1.1.54",
+    "gatsby-plugin-react-helmet": "^3.2.1",
+    "gatsby-plugin-sass": "^2.2.1",
+    "gatsby-plugin-sharp": "^2.6.11",
+    "gatsby-plugin-sitemap": "^2.4.7",
+    "gatsby-plugin-styled-components": "^3.3.1",
+    "gatsby-plugin-zopfli": "^1.3.2",
+    "gatsby-source-contentful": "^2.2.7",
+    "gatsby-source-filesystem": "^2.2.2",
+    "gatsby-transformer-remark": "^2.7.5",
+    "gatsby-transformer-sharp": "^2.5.5",
+    "iframe-resizer-react": "^1.0.3",
+    "jquery": "^3.5.0",
+    "moment": "^2.26.0",
+    "node-sass": "^4.13.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "react-icons": "^3.10.0",
+    "styled-components": "^5.1.0",
+    "url-slug": "^2.3.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run serve",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "postinstall": "gatsby build",
+    "heroku-postbuild": "gatsby build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

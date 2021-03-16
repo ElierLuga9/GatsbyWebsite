@@ -1,0 +1,59 @@
+@import "./index.scss";
+.medical-member-info {
+  @media (max-width: 600px) {
+    overflow-x: scroll;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+  }
+}
+
+.medical-member {
+  margin-bottom: 20px;
+
+  @media (max-width: 600px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  p {
+    @media (max-width: 600px) {
+      white-space: break-spaces;
+    }
+  }
+}
+
+.list-group-product {
+  * {
+    color: $black;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  .disclaimer {
+    font-size: 11px;
+
+    @media (min-width: 600px) {
+      padding: 0 26px;
+    }
+  }
+}
+
+.list-group-title {
+  background-color: rgba(81,82,79, 0.25);
+  height: 125px;
+  display: flex;
+  align-items: center;
+
+  h2 {
+    margin: 0;
+  }
+
+  @media (max-width: 600px) {
+
+  }
+}
+
+

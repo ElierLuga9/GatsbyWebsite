@@ -1,0 +1,114 @@
+@import "../fonts/FuturaPT.scss";
+
+// Variables pulled from Style Guide:
+
+$pink-primary: #f498bc;
+$pink-light: #f9d9e5;
+$pink-dark: #bf6d8d;
+$black: #222222;
+$beige: #f7eaca;
+$orange: #f17d6e;
+$his-text: #87a5ad;
+
+/* The following block can be included in a custom.scss */
+
+/* make the customizations */
+$font-family-sans-serif: "Futura PT Book";
+$enable-rounded: false;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+// $container-max-widths: (
+//   sm: 540px,
+//   md: 800px,
+//   lg: 1200px,
+//   xl: 1640px,
+// ) !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 600px,
+  md: 800px,
+  lg: 1000px,
+  xl: 1280px
+);
+
+$grid-breakpoint-xs: 0;
+$grid-breakpoint-sm: 600px;
+$grid-breakpoint-md: 800px;
+$grid-breakpoint-lg: 1000px;
+$grid-breakpoint-xl: 1280px;
+
+//  Looks like you don't need to overwrite, only add to.
+//  eg - the absense of "success" will still yield a bg-success / text-sucess class
+$theme-colors: (
+  "primary": #d8a0a8,
+  "secondary": #b3c2c6,
+);
+
+$display1-size: 3.5rem !default;
+$display2-size: 2.5rem !default;
+$display3-size: 1.5rem !default;
+$display4-size: 0.5rem !default;
+
+// Buttons
+$btn-padding-x: 2rem;
+$btn-padding-x-sm: 1rem;
+$btn-padding-x-lg: 3rem;
+
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";
+@import "./buttons.scss";
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+
+  &.no-max-width {
+    max-width: unset;
+  }
+}
+
+@media only screen and (max-width: $grid-breakpoint-sm) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: $grid-breakpoint-md) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: $grid-breakpoint-lg) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+main {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
